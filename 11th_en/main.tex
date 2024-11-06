@@ -1,0 +1,57 @@
+\documentclass[a4paper, twoside]{book}
+\usepackage{ amsmath, amsthm, amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+ \usepackage{longtable}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{titlesec}
+\usepackage{subfiles} % it should be loaded last in preamble
+
+% \sethlcolor{black!5}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+% Renew commands starts
+  \renewcommand{\familydefault}{\sfdefault}
+  \renewcommand{\arraystretch}{1.5}
+% Renew commands ends
+
+% New commands starts
+\newcommand{\topic}[1]{
+  \begin{center}
+    \textbf{
+      \LARGE{#1}
+    }
+  \end{center}
+}
+
+\newcommand{\hl}[1]{
+  \textcolor{black!50}{\colorbox{black!5}{\textbf{\texttt{\footnotesize{#1}}}}}\@
+  % do not remove this comment, as it does not compile without this, I don't know why
+  % do not even put space between comment and code above
+}
+
+\newcommand{\set}[1]{
+  $\{ {#1} \}$
+}
+
+\newcommand{\note}[1]{
+  \begin{tcolorbox}[title=Note, colback=cyan!30, colframe=cyan!80]
+    {#1}
+  \end{tcolorbox}
+}
+\newcommand{\warn}[1]{
+  \begin{tcolorbox}[title=Warning, colback=orange!30, colframe=orange!80]
+    {#1}
+  \end{tcolorbox}
+}
+% New commands ends
+
+% Document Starts
+\begin{document}
+
+\subfile{Sets}
+\end{document}

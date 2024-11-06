@@ -1,0 +1,138 @@
+\documentclass[./main.tex]{subfiles}
+
+\begin{document}
+\topic{Sets}
+\section*{Definition}
+\begin{enumerate}
+\item Sets are a collection of well-defined objects or elements.
+\item Sets are a collection of objects having some properties in common.
+\end{enumerate}
+In above two definitions we have used the words \emph{`well-defined'} and \emph{`properties in common'}. These two convey the same meaning. \emph{`well-defined'} alone should be understood as \emph{`well-defined properties'} for each elements in the set, and those properties should hold true for all the elements.
+
+
+\subsection*{Examples}
+\begin{enumerate}
+\item The set of all the prime divisors of 520
+\item The set of all numbers divisible by 0
+\item The set of vowels in the english alphabets
+\item The set of all the rivers in India.
+\item the set of all the players who scored at least 100 in the 2011 cricket world cup
+\end{enumerate}
+
+In all the above examples the properties for the elements in the set is well-defined, meaning by examining the properties (statement in this case) one can say whether given element is in the set or not.
+
+Consider this statement \emph{`The set of good Indian actors'} or \emph{`The set of best teachers in the school'}. For both of the above examples, the property viz.\@ \emph{`good Indian actors'} and \emph{`best teachers'} is subjective to the individual. An actor maybe good in person A's opinion but that does not mean that everyone will think that actor is good. Same is the case for \emph{`best teachers'}, preference for who is best teacher can vary person to person. In this case the defined property for the set is said to be \emph{`vague'} or \emph{`not well-defined'}, hence above statements do not represent a set.
+
+\section*{Representation (Description) of sets:} A set can be described in following 3 ways:
+\begin{enumerate}
+\item Roster form or Tabular form
+\item Set-builder
+\item Visual form (Venn diagram) \small{\emph{(venn diagram, it will be dealt in saperate section*)}}
+\end{enumerate}
+
+\section*{Roster form or Tabular form:}
+In this form a set is defined by listing all the elements, separated by comma, inside braces
+\emph{\textbraceleft \textbraceright}.
+
+\subsection*{Example}
+\begin{enumerate}
+\item The set of vowels of english alphabet -  $\{a, e, i, o, u\}$
+\item the set of odd natural numbers - $\{1, 3, 5, 7, 9, \ \ldots \}$,
+     Here the \hl{\ldots} \ stands for \hl{and so on}.
+\end{enumerate}
+
+\note{
+\begin{enumerate}
+ \item The order of the elements written in a set does not matter.
+ \item The repetition of elements in a set has no effect. for example set $\{1,2,3,2\}$ is same set as $\{1,3,2\}$
+\end{enumerate}
+}
+
+\section*{Set-Builder form:} In this form, a set is described by a characterizing property P(x) of it's element x.
+General form is like this,
+\[
+A = \{x : P(x) holds\}\ or \
+A = \{x | P(x) holds\}
+\]
+Here, P(x) should be understood like \emph{`some property of x'}. This property can be described by simple sentence or mathematical statements. Symbol \hl{:} and \hl{|} is read as \hl{such that}.
+
+\subsection*{Example}
+
+\begin{table}[h]
+    \begin{center}
+        \begin{tabular}{ |p{6cm}|p{8cm}| }
+            \rowcolor{cyan!30}
+            \hline
+            Set 									& Set-builder form \\ \hline
+            The set $E$ of all even natural numbers	& $E = \{ x: x \in \mathbb{N},\ x = 2n,\ n \in \mathbb{N} \}$ {\tiny\textbf{OR}} \\
+                         			        		& $E = \{ x \in \mathbb{N}:  x = 2n,\ n \in \mathbb{N} \}$ \\ \hline
+            $A = \{ 1, 2, 3, 4, 5, 6, 7, 8 , 9 \}$  & $A = \{ x: x \in \mathbb{N}, x \leq 9 \}$ {\tiny\textbf{OR}} \\
+                                                    & $A = \{ x \in \mathbb{N}: x \leq 9 \}$ \\ \hline
+            The set of all real numbers greater than -1 and less than 1 & $\{ x \in \mathbb{R}: -1 < x < 1  \}$ \\ \hline
+            $A = \{ 0, 1, 4, 9, 16, ... \} $		& $A = \{ x^2:\in \mathbb{N} \}$ OR $\{ x^2: x^2 \in \mathbb{N} \}$ \\ \hline
+
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\section*{Symbols used in Set and their meaning}
+    \begin{center}
+        \begin{longtable}[h]{|c|p{0.25\linewidth}|p{0.3\linewidth}|p{0.3\linewidth}|}
+            \hline
+            \rowcolor{cyan!30}
+            Symbol 			& Meaning 					& Example 										& Remarks \\ \hline \endhead
+
+            $\mathbb{W}$ 	& Set of whole numbers		& $\mathbb{W}=
+                                                            \{0,1,2,3,4,\ \cdots \}$ 					& \\ \hline
+
+            $\mathbb{N}$ 	& Set of natural numbers	& $\mathbb{N}= \{1,2,3,4,\ \cdots \}$ 			& \\ \hline
+
+            $\mathbb{Z}$ 	& Set of integers			& $\mathbb{Z}= \{\cdots , 1,2,3,4,\ \cdots \}$ 	& \\ \hline
+
+            $\mathbb{Q}$ 	& Set of rational numbers	& $\mathbb{Q}= \{x:x = \frac{a}{b},\ a,b
+                                                                 \in \mathbb{Z}\ and \ b \ne 0\}$ 		& \\ \hline
+
+            $\mathbb{R}$ 	& Set of real numbers		& 												& Whole numbers, rational numbers,
+                                                                                                          and irrational numbers make up real numbers. \\ \hline
+
+            $\mathbb{C}$ 	& Set of complex numbers	& 												& Complex numbers are in the form of $a+bi$ \\ \hline
+
+            $\mathbb{I}$ 	& Set of imaginary numbers	& 												& Imaginary numbers are in the form of $ai$ \\ \hline
+
+            : OR |		 	& Such that					& $\{q | q > 6 \}$ OR $\{q : q > 6 \}$			& Set of all $q$'s, such that $q$ is bigger than 6 \\ \hline
+
+            $\in$		 	& Is a component of, Is an
+                                 element of, belongs to & $a \in A$										& if $A = \{1,8,23 \} $ then $23 \in A$\\ \hline
+
+            $\notin$		& Is not a component of,
+                                Is not an element of,
+                                does not belong to 		& $a \notin A$									& if $A = \{1,8,23 \} $ then $3 \notin A$\\ \hline
+
+            $=$				& Equality relation			& $A = \{ 2,3,a,e \}$,
+                                                          $B = \{ 2,a,3,e \}$
+                                                          $A = B$										& if both sets have identical elements we say both
+                                                                                                            sets are equal. \\ \hline
+
+           $\subseteq$		& Is a subset of			& $A= \{1,2,3\}$ and $B=\{1,2,3\}$ or
+                                                          $A= \{1,2,3\}$ and $B=\{1,2,3,4\}$
+                                                          $A \subseteq B$                               & When all of the items of set $A$
+                                                                                                             are present in set $B$,
+                                                                                                             then set $A$ is a subset of set $B$. \\ \hline
+
+          $\subset$			& Proper subset				& $A= \{1,2,3\},\ B=\{1,2,3,4 \}$ then
+                                                          $A \subset B$									& When all of the items of set $A$ are present in set $B$,
+                                                                                                          and $A \neq B$,
+                                                                                                          then set $A$ is a proper subset of set $B$. \\ \hline
+
+
+        \end{longtable}
+    \end{center}
+
+
+
+
+
+
+
+\end{document}
+
